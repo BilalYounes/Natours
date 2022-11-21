@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*we make the all element inherit  box-sizing: border-box; */
+}
+html {
+  font-size: 62.5%; /*16 px is the default font size by browser 62.5% is 10 px*/
+
+  //   I have to tell you something man and you should  kept in your head
+  // 1- when we used percetage %% in child font-size => x% * parents font-size
+  // and padding margin => x% * parents width
+  // 2- as for rem alwayse  => xrem * parents font-size
+}
+
+body {
+  box-sizing: border-box;
+  
+  /*the padding and margin its no more added to height and width
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element*/
+}
